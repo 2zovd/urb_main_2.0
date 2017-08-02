@@ -10,6 +10,18 @@ $transition: .05s
     border-radius: $radius
     
 =transition($transition)
-    -webkit-transition: all $transition
-    -o-transition: all $transition
-    transition: all $transition
+    -webkit-transition: all $transition ease .1s
+    -o-transition: all $transition ease .1s
+    transition: all $transition ease .1s
+    
+.red-btn
+    +border-radius($radius)
+    background: $main-color
+    border: 1px solid transparent
+    color: #fff
+    font-family: 'Roboto Slab'
+    &:hover,
+    &:focus
+        background: $main-color-hover
+    &:active
+        background: $main-color-active

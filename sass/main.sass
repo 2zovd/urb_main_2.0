@@ -19,7 +19,14 @@ body
     width: 100%
     position: relative
     z-index: 1
-    
+
+.header-home_buttons
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+
 .logo-home
     display: block
     span
@@ -30,6 +37,8 @@ body
         display: none
     img
         display: inline-block
+        width: 100%
+        height: auto
         
 .header-home_bg
     display: block
@@ -119,6 +128,22 @@ h1
     line-height: 40px
     text-align: center
     margin-bottom: 50px
+    
+h2
+    display: block
+    font-family: 'Roboto Slab'
+    font-size: 34px
+    font-weight: 700
+    margin-bottom: 20px
+    color: #000
+
+h3
+    display: block
+    font-family: 'Roboto'
+    font-weight: 700
+    font-size: 18px
+    margin-bottom: 40px
+    font-style: italic
     
 .home-form_box
     background: rgba(255,255,255,.85)
@@ -263,23 +288,15 @@ h1
         border: 1px solid rgba(0,0,0,.4)
     
 .btn-home-form_submit
-    +border-radius($radius)
-    background: $main-color
+    @extend .red-btn
     width: 100%
     margin-top: 10px
     margin-bottom: 20px
-    border: 1px solid transparent
     font-family: 'Roboto Slab'
-    color: #fff
     font-size: 16px
     line-height: 50px
     text-transform: uppercase
     font-weight: 700
-    &:hover,
-    &:focus
-        background: $main-color-hover
-    &:active
-        background: $main-color-active
     
 .home-form_terms
     display: block
@@ -309,15 +326,18 @@ h1
     -o-flex-wrap: wrap
     flex-wrap: wrap
 
-.main-nav
+.navigation-row
     margin-top: 45px
     margin-bottom: 150px
+    
+.main-nav
+    overflow: hidden
     li
         display: inline-block
+        float: left
         &:last-child
             a:after
                 display: none
-                
     a
         position: relative
         display: inline-block
@@ -340,5 +360,95 @@ h1
             -ms-transform: translateY(-50%)
             -o-transform: translateY(-50%)
             transform: translateY(-50%)
-            
+
+.nav-social-links
+    text-align: right
+    li
+        display: inline-block
+        margin: 0 5px
+        
+.social-btn-common
+    display: inline-block
+    width: 32px
+    height: 32px
+    background-image: url('../img/social-buttons.png')
+    background-repeat: no-repeat
+    background-position: 0 0
+    +transition(.15s)
+    &:hover
+        -webkit-transform: scale(1.2)
+        -ms-transform: scale(1.2)
+        -o-transform: scale(1.2)
+        transform: scale(1.2)
+
+.btn-facebook
+    @extend .social-btn-common
+    background-position: 0 0
+
+.btn-instagram
+    @extend .social-btn-common
+    background-position: -32px 0
+    
+.btn-youtube
+    @extend .social-btn-common
+    background-position: -64px 0
+    
+.btn-instagram
+    @extend .social-btn-common
+    background-position: -96px 0
+    
+.btn-twitter
+    @extend .social-btn-common
+    background-position: -128px 0
+    
+.btn-google
+    @extend .social-btn-common
+    background-position: -161px 0
+    
+.introduction
+    margin-bottom: 195px
+
+.bordered-image
+    background-image: url('../img/matchmaker.jpg')
+    background-position: 15px 0
+    background-size: 400px auto
+    background-repeat: no-repeat
+    
+.introduction-wrap
+    @extend .bordered-image
+    overflow: hidden
+    
+.section-border
+    +border-radius(7px)
+    border: 2px solid #f24841
+    margin-top: 45px
+    padding-top: 45px
+    padding-bottom: 100px
+
+.section-border_content
+    // margin-bottom: 100px
+    
+.border-content_paragraph
+    font-family: 'Roboto' 
+    font-weight: 400
+    margin-bottom: 30px
+    color: #000
+    
+.gray-paragraph
+    @extend .border-content_paragraph
+    color: #939292
+    a
+        color: inherit
+        text-decoration: underline
+        &:hover
+            text-decoration: none
+
+.btn-more
+    @extend .red-btn
+    font-weight: 300
+    padding: 0 50px
+    font-size: 16px
+    line-height: 50px
+        
+@import 'media'
     
