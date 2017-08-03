@@ -85,15 +85,6 @@ body {
   position: relative;
   z-index: 1; }
 
-.header-home_buttons {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .logo-home {
   display: block; }
   .logo-home span {
@@ -618,8 +609,9 @@ h3 {
     -ms-flex-pack: center;
     justify-content: center; }
     .top-line .logo-home {
+      margin: 0 15px;
       margin-bottom: 20px;
-      width: 70%; } }
+      width: 60%; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
