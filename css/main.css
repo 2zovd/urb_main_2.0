@@ -116,7 +116,7 @@ body {
   opacity: 0.5; }
 
 .top-line {
-  padding-top: 1vh;
+  padding-top: 2vh;
   padding-bottom: 5vh;
   display: -webkit-flex;
   display: -moz-flex;
@@ -530,7 +530,7 @@ h3 {
   background-image: -moz-linear-gradient(left, #ea4c58, #ea4c58);
   background-image: -ms-linear-gradient(left, #ea4c58, #ea4c58);
   background-image: -o-linear-gradient(left, #ea4c58, #ea4c58);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(#ea4c58), to(#ea4c58));
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea4c58), to(#ea4c58));
   background-image: linear-gradient(left, #ea4c58, #ea4c58);
   background-color: transparent;
   background-position: 0 50%;
@@ -636,7 +636,8 @@ h3 {
 
 .our-team {
   background-image: url("../img/urb-founder.jpg");
-  background-position: calc(100% - 15px) 0; }
+  background-position: calc(100% - 15px) 0;
+  position: relative; }
 
 .section-border {
   -webkit-border-radius: 7px;
@@ -645,7 +646,8 @@ h3 {
   border: 2px solid #f24841;
   margin-top: 45px;
   padding-top: 45px;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  position: relative; }
 
 .border-content_paragraph, .gray-paragraph {
   font-family: 'Roboto';
@@ -768,6 +770,136 @@ h3 {
   line-height: 22px;
   padding: 15px 35px; }
 
+.certificate-img {
+  position: absolute;
+  left: 47%;
+  top: 140px;
+  display: none;
+  width: 180px;
+  height: 180px;
+  z-index: 1; }
+
+.ornament-heading {
+  padding-bottom: 45px;
+  background: url("../img/ornament--dot.png") no-repeat 0 100%; }
+
+.paragraphs-section {
+  margin: 80px 0; }
+
+.ladies-profiles {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.ladies-box, .girls-online {
+  width: 210px;
+  color: #fff;
+  padding: 35px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px; }
+
+.girls-online {
+  background-color: #3f4cae; }
+
+.girls-online_counter {
+  display: inline-block;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  padding-left: 15px; }
+  .girls-online_counter:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    background: #4ed947;
+    border-radius: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.girls-online_ornament {
+  display: block;
+  font-family: 'Roboto Slab';
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 35px;
+  position: relative;
+  margin-bottom: 15px; }
+  .girls-online_ornament:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 85%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 40px;
+    background-image: -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%), url("../img/ornament--dot.png"), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%);
+    background-image: -moz-linear-gradient(left, #dd4d46 0%, #dd4d46 100%), url("../img/ornament--dot.png"), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%);
+    background-image: -ms-linear-gradient(left, #dd4d46 0%, #dd4d46 100%), url("../img/ornament--dot.png"), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%);
+    background-image: -o-linear-gradient(left, #dd4d46 0%, #dd4d46 100%), url("../img/ornament--dot.png"), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%);
+    background-image: -webkit-gradient(linear, right top, left top, from(#dd4d46), to(#dd4d46)), url("../img/ornament--dot.png"), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%);
+    background-image: -webkit-linear-gradient(right, #dd4d46 0%, #dd4d46 100%), url("../img/ornament--dot.png"), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%);
+    background-image: -o-linear-gradient(right, #dd4d46 0%, #dd4d46 100%), url("../img/ornament--dot.png"), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%);
+    background-image: linear-gradient(to left, #dd4d46 0%, #dd4d46 100%), url("../img/ornament--dot.png"), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%);
+    background-size: 38% 1px, 40px auto, 38% 1px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 50%, 50% 50%, 100% 50%; }
+  .girls-online_ornament strong {
+    font-weight: 700; }
+
+.girls-online_content {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  margin-bottom: 45px; }
+
+.btn-girls-online {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 33px;
+  border: 1px solid #fff;
+  padding: 0 25px; }
+  .btn-girls-online:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+  .btn-girls-online:active {
+    background-color: white;
+    color: #000; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -829,7 +961,7 @@ h3 {
   .section-border {
     margin: 0 15px;
     padding-top: 300px;
-    margin-top: 40px; }
+    margin-top: 20px; }
   .bordered-image, .intro, .our-team {
     background-size: auto 300px;
     background-position: 50% 0; }
@@ -874,8 +1006,15 @@ h3 {
       text-align: center;
       margin: 25px 0 15px; }
   .team-heading img {
+    position: absolute;
+    left: 0;
+    top: 0;
     max-width: 150px;
-    margin: 25px auto; } }
+    margin: 25px auto; }
+  .certificate-img {
+    display: block; }
+  .team-heading img {
+    display: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {

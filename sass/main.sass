@@ -51,7 +51,7 @@ body
     opacity: 0.5
 
 .top-line
-    padding-top: 1vh
+    padding-top: 2vh
     padding-bottom: 5vh
     display: -webkit-flex
     display: -moz-flex
@@ -525,6 +525,7 @@ h3
     @extend .bordered-image
     background-image: url('../img/urb-founder.jpg')    
     background-position: $bg-right 0
+    position: relative
     
 .section-border
     +border-radius(7px)
@@ -532,6 +533,7 @@ h3
     margin-top: 45px
     padding-top: 45px
     padding-bottom: 100px
+    position: relative
 
 .section-border_content
     // margin-bottom: 100px
@@ -643,5 +645,122 @@ h3
     line-height: 22px
     padding: 15px 35px 
         
+.certificate-img
+    position: absolute
+    left: 47%
+    top: 140px
+    display: none
+    width: 180px
+    height: 180px
+    z-index: 1
+    
+.ornament-heading
+    padding-bottom: 45px
+    background: url('../img/ornament--dot.png') no-repeat 0 100%
+    
+.paragraphs-section
+    margin: 80px 0
+    
+.ladies-profiles
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    -webkit-justify-content: space-between
+    -moz-justify-content: space-between
+    -ms-justify-content: space-between
+    -o-justify-content: space-between
+    justify-content: space-between
+    -ms-align-items: center
+    align-items: center
+    
+.ladies-box
+    width: 210px
+    color: #fff
+    padding: 35px 20px
+    +border-radius($radius)
+    
+.girls-online
+    @extend .ladies-box
+    background-color: #3f4cae
+
+.girls-online_counter
+    display: inline-block
+    font-family: 'Roboto'
+    font-weight: 700
+    font-size: 14px
+    line-height: 20px
+    position: relative
+    padding-left: 15px
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: 50%
+        width: 10px
+        height: 10px
+        background: #4ed947
+        border-radius: 100%
+        -webkit-transform: translateY(-50%)
+        -ms-transform: translateY(-50%)
+        -o-transform: translateY(-50%)
+        transform: translateY(-50%)
+
+.girls-online_ornament
+    display: block
+    font-family: 'Roboto Slab'
+    font-size: 16px
+    font-weight: 700
+    text-align: center
+    padding-top: 35px
+    position: relative
+    margin-bottom: 15px
+    &:after
+        content: ''
+        position: absolute
+        left: 50%
+        top: 0
+        width: 85%
+        -webkit-transform: translateX(-50%)
+        -ms-transform: translateX(-50%)
+        -o-transform: translateX(-50%)
+        transform: translateX(-50%)
+        height: 40px
+        background-image: -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%), url('../img/ornament--dot.png'), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%)
+        background-image: -moz-linear-gradient(left, #dd4d46 0%, #dd4d46 100%), url('../img/ornament--dot.png'), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%)
+        background-image: -ms-linear-gradient(left, #dd4d46 0%, #dd4d46 100%), url('../img/ornament--dot.png'), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%)
+        background-image: -o-linear-gradient(left, #dd4d46 0%, #dd4d46 100%), url('../img/ornament--dot.png'), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%)
+        background-image: linear-gradient(to left, #dd4d46 0%, #dd4d46 100%), url('../img/ornament--dot.png'), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%)
+        background-size: 38% 1px, 40px auto, 38% 1px
+        background-repeat: no-repeat, no-repeat
+        background-position: 0 50%, 50% 50%, 100% 50%
+    strong
+        font-weight: 700
+
+.girls-online_content
+    display: inline-block
+    font-size: 14px
+    line-height: 22px
+    font-family: 'Roboto'
+    font-weight: 300
+    margin-bottom: 45px
+
+.btn-girls-online
+    display: inline-block
+    background-color: transparent
+    color: #fff
+    +border-radius($radius)
+    font-size: 14px
+    line-height: 33px
+    border: 1px solid #fff
+    padding: 0 25px
+    &:hover
+        background-color: rgba(255,255,255,.3)
+    &:active
+        background-color: rgba(255,255,255,1)
+        color: #000
+    
 @import 'media'
     
