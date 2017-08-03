@@ -15,7 +15,7 @@
     .introduction-wrap
         background-size: 250px auto 
     .section-border
-        padding-bottom: 70px
+        padding-bottom: 30px
     .nav-social-links
         text-align: center
     .nav-social-links
@@ -29,7 +29,22 @@
         margin-bottom: 15px
     .home-form_box
         padding: 30px 15px
-
+    .btn-main-nav
+        display: inline-block
+    .main-nav
+        height: 0px
+        li
+            padding: 15px 0
+            display: block
+            width: 100%
+            a
+                &:after
+                    right: auto
+                    left: 0
+        li
+            &:last-child
+                a:after
+                    display: block
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
     .section-border
@@ -47,6 +62,7 @@
         line-height: 1.4
     h3
         font-size: 16px
+        margin-bottom: 25px
     .home-form_title
         font-size: 20px
         line-height: 1.4
@@ -57,6 +73,8 @@
 @media only screen and (max-width : 480px)
     .btn-more
         width: 100%
+        font-size: 15px
+        line-height: 40px
     .btn-top
         width: 90px
         font-size: 12px
@@ -72,6 +90,7 @@
             margin: 0 15px
             margin-bottom: 20px
             width: 60%
+            
 
 
 /* Custom, iPhone Retina */
