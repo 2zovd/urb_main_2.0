@@ -1,4 +1,4 @@
 $('.row-nav-btn').click(function(){
-    $(this).toggleClass('active');
+    $('.btn-main-nav').toggleClass('active');
     $('.main-nav').toggleClass('active');
 });

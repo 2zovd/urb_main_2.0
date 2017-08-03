@@ -143,6 +143,7 @@ h3
     font-family: 'Roboto'
     font-weight: 700
     font-size: 18px
+    line-height: inherit
     margin-bottom: 40px
     font-style: italic
     
@@ -328,6 +329,9 @@ h3
     -o-flex-wrap: wrap
     flex-wrap: wrap
 
+.content-home
+    overflow: hidden
+    
 .navigation-row
     margin-top: 45px
     margin-bottom: 150px
@@ -504,18 +508,23 @@ h3
     @extend .social-btn-common
     background-position: -161px 0
     
-.introduction
+.content-section
     margin-bottom: 195px
 
 .bordered-image
-    background-image: url('../img/matchmaker.jpg')
-    background-position: 15px 0
     background-size: 400px auto
     background-repeat: no-repeat
-    
-.introduction-wrap
-    @extend .bordered-image
     overflow: hidden
+
+.intro
+    @extend .bordered-image
+    background-image: url('../img/matchmaker.jpg')
+    background-position: 15px 0
+    
+.our-team
+    @extend .bordered-image
+    background-image: url('../img/urb-founder.jpg')    
+    background-position: $bg-right 0
     
 .section-border
     +border-radius(7px)
@@ -548,6 +557,89 @@ h3
     padding: 0 50px
     font-size: 16px
     line-height: 50px
+        
+.team-heading
+    margin-bottom: 50px
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    -ms-align-items: center
+    align-items: center
+    -webkit-flex-wrap: wrap
+    -moz-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    -o-flex-wrap: wrap
+    flex-wrap: wrap
+    h3
+        margin-bottom: 0
+
+.ico-text
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    -webkit-justify-content: center
+    -moz-justify-content: center
+    -ms-justify-content: center
+    -o-justify-content: center
+    justify-content: center
+    -ms-align-items: center
+    align-items: center
+    strong
+        display: inline-block
+        font-family: 'Roboto'
+        font-weight: 700
+        font-size: 24px
+        color: #fff
+        text-align: left
+    img
+        display: inline-block
+        margin-right: 35px
+        
+.banner-row_wrap
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    -ms-align-items: center
+    align-items: center
+    -webkit-flex-wrap: wrap
+    -moz-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    -o-flex-wrap: wrap
+    flex-wrap: wrap
+    
+.banner-row
+    width: 100%
+    position: relative
+    padding: 45px 0
+    background: -webkit-linear-gradient(left, #acbeee, #c296ba)
+    z-index: 1
+    margin-bottom: 90px
+    &:after
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        right: 0
+        width: 100%
+        z-index: -1
+        background-image: url('../img/photo-row-01.jpg')
+        background-repeat: no-repeat
+        background-position: 50% 0
+        background-size: cover
+        opacity: 0.1
+ 
+.btn-chat
+    @extend .red-btn
+    font-size: 16px
+    line-height: 22px
+    padding: 15px 35px 
         
 @import 'media'
     
