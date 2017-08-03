@@ -463,8 +463,7 @@ h3 {
       -o-transform: translateY(-50%);
       transform: translateY(-50%); }
   .main-nav.active {
-    height: 300px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+    height: 300px; }
 
 .row-nav-btn {
   width: 100%;
@@ -525,7 +524,7 @@ h3 {
   background-image: -moz-linear-gradient(left, #ea4c58, #ea4c58);
   background-image: -ms-linear-gradient(left, #ea4c58, #ea4c58);
   background-image: -o-linear-gradient(left, #ea4c58, #ea4c58);
-  background-image: -webkit-gradient(linear, left top, right top, from(#ea4c58), to(#ea4c58));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(#ea4c58), to(#ea4c58));
   background-image: linear-gradient(left, #ea4c58, #ea4c58);
   background-color: transparent;
   background-position: 0 50%;
