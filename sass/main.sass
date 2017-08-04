@@ -126,7 +126,7 @@ h1
     font-family: 'Roboto Slab'
     font-weight: 700
     font-size: 34px
-    line-height: 40px
+    line-height: 1.5
     text-align: center
     margin-bottom: 50px
     
@@ -660,30 +660,6 @@ h3
     
 .paragraphs-section
     margin: 80px 0
-    
-.ladies-profiles
-    display: -webkit-flex
-    display: -moz-flex
-    display: -ms-flex
-    display: -o-flex
-    display: flex
-    -webkit-justify-content: space-between
-    -moz-justify-content: space-between
-    -ms-justify-content: space-between
-    -o-justify-content: space-between
-    justify-content: space-between
-    -ms-align-items: center
-    align-items: center
-    
-.ladies-box
-    width: 210px
-    color: #fff
-    padding: 35px 20px
-    +border-radius($radius)
-    
-.girls-online
-    @extend .ladies-box
-    background-color: #3f4cae
 
 .girls-online_counter
     display: inline-block
@@ -733,7 +709,7 @@ h3
         background-image: -ms-linear-gradient(left, #dd4d46 0%, #dd4d46 100%), url('../img/ornament--dot.png'), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%)
         background-image: -o-linear-gradient(left, #dd4d46 0%, #dd4d46 100%), url('../img/ornament--dot.png'), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%)
         background-image: linear-gradient(to left, #dd4d46 0%, #dd4d46 100%), url('../img/ornament--dot.png'), -webkit-linear-gradient(left, #dd4d46 0%, #dd4d46 100%)
-        background-size: 38% 1px, 40px auto, 38% 1px
+        background-size: 33% 1px, 40px auto, 33% 1px
         background-repeat: no-repeat, no-repeat
         background-position: 0 50%, 50% 50%, 100% 50%
     strong
@@ -761,6 +737,94 @@ h3
     &:active
         background-color: rgba(255,255,255,1)
         color: #000
+
+.ladies-row
+    margin-bottom: 100px
     
+.ladies-profiles
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    -webkit-justify-content: center
+    -moz-justify-content: center
+    -ms-justify-content: center
+    -o-justify-content: center
+    justify-content: center
+    -ms-align-items: center
+    align-items: center
+    -webkit-flex-wrap: wrap
+    -moz-flex-wrap: wrap
+    -ms-flex-wrap: wrap
+    -o-flex-wrap: wrap
+    flex-wrap: wrap
+    
+.ladies-box
+    color: #fff
+    -webkit-flex-basis: 210px
+    -moz-flex-basis: 210px
+    -ms-flex-basis: 210px
+    -o-flex-basis: 210px
+    flex-basis: 210px
+    +transition(.15s)
+    +border-radius(7px)
+    position: relative
+    margin: 0 15px 50px 15px
+    
+.girls-online
+    @extend .ladies-box
+    background-color: #3f4cae
+    padding: 35px 20px
+    
+.profile-block
+    @extend .ladies-box
+    img
+        width: 100%
+        height: auto
+        +border-radius(7px)
+    &:hover
+        .profile-block_info
+            height: 115px
+            bottom: -40px
+
+
+.profile-block_info
+    position: absolute
+    overflow: hidden
+    bottom: 0
+    height: 65px
+    left: 0
+    width: 100%
+    background-color: $main-color
+    background-image: url('../img/orn-white.png')
+    background-repeat: repeat-x
+    background-position: 0 -4px
+    padding: 15px 0 10px 0
+    text-align: center
+    +border-radius(0 0 7px 7px)
+    +transition(.15s)
+    z-index: 1
+    .btn-girls-online
+        margin-top: 15px
+    strong
+        display: block
+        text-align: center
+        font-family: 'Roboto Slab'
+        font-weight: 700
+        font-size: 16px
+        line-height: 18px
+        margin-bottom: 5px
+    span
+        display: block
+        font-size: 14px
+        line-height: 16px
+        font-family: 'Roboto'
+        font-weight: 300
+        text-align: center
+        em
+            font-style: normal
+        
+        
 @import 'media'
     
