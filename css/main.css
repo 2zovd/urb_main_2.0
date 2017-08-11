@@ -4,6 +4,9 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  -webkit-transition: all 0.05s ease 0s;
+  -o-transition: all 0.05s ease 0s;
+  transition: all 0.05s ease 0s;
   background: #ea4c58;
   border: 1px solid transparent;
   color: #fff;
@@ -147,9 +150,9 @@ body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-transition: all 0.05s ease 0.1s;
-  -o-transition: all 0.05s ease 0.1s;
-  transition: all 0.05s ease 0.1s;
+  -webkit-transition: all 0.05s ease 0s;
+  -o-transition: all 0.05s ease 0s;
+  transition: all 0.05s ease 0s;
   width: 100px;
   font-family: 'Roboto';
   font-weight: 400;
@@ -310,9 +313,9 @@ h4 {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  -webkit-transition: all 0.05s ease 0.1s;
-  -o-transition: all 0.05s ease 0.1s;
-  transition: all 0.05s ease 0.1s;
+  -webkit-transition: all 0.05s ease 0s;
+  -o-transition: all 0.05s ease 0s;
+  transition: all 0.05s ease 0s;
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 12px;
@@ -386,9 +389,9 @@ h4 {
   margin-bottom: 15px;
   width: 100%;
   padding: 0 15px;
-  -webkit-transition: all 0.15s ease 0.1s;
-  -o-transition: all 0.15s ease 0.1s;
-  transition: all 0.15s ease 0.1s; }
+  -webkit-transition: all 0.15s ease 0s;
+  -o-transition: all 0.15s ease 0s;
+  transition: all 0.15s ease 0s; }
 
 .home-form_error {
   position: absolute;
@@ -461,9 +464,9 @@ h4 {
 
 .main-nav {
   overflow: hidden;
-  -webkit-transition: all 0.15s ease 0.1s;
-  -o-transition: all 0.15s ease 0.1s;
-  transition: all 0.15s ease 0.1s; }
+  -webkit-transition: all 0.15s ease 0s;
+  -o-transition: all 0.15s ease 0s;
+  transition: all 0.15s ease 0s; }
   .main-nav li {
     display: inline-block;
     float: left; }
@@ -577,13 +580,13 @@ h4 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transition: all 0.05s ease 0.1s;
-  -o-transition: all 0.05s ease 0.1s;
-  transition: all 0.05s ease 0.1s; }
+  -webkit-transition: all 0.15s ease 0s;
+  -o-transition: all 0.15s ease 0s;
+  transition: all 0.15s ease 0s; }
   .btn-main-nav:before, .btn-main-nav:after {
-    -webkit-transition: all 0.3s ease 0.1s;
-    -o-transition: all 0.3s ease 0.1s;
-    transition: all 0.3s ease 0.1s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
     content: '';
     position: absolute;
     background: #ea4c58;
@@ -619,9 +622,9 @@ h4 {
   background-image: url("../img/social-buttons.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  -webkit-transition: all 0.15s ease 0.1s;
-  -o-transition: all 0.15s ease 0.1s;
-  transition: all 0.15s ease 0.1s; }
+  -webkit-transition: all 0.15s ease 0s;
+  -o-transition: all 0.15s ease 0s;
+  transition: all 0.15s ease 0s; }
   .social-btn-common:hover, .btn-facebook:hover, .btn-instagram:hover, .btn-youtube:hover, .btn-twitter:hover, .btn-google:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -671,7 +674,7 @@ h4 {
   background-size: 520px auto; }
 
 .content-section {
-  margin-bottom: 190px; }
+  margin-bottom: 100px; }
 
 .section-border {
   -webkit-border-radius: 7px;
@@ -939,9 +942,9 @@ h4 {
   -o-flex-basis: 210px;
   -ms-flex-preferred-size: 210px;
   flex-basis: 210px;
-  -webkit-transition: all 0.15s ease 0.1s;
-  -o-transition: all 0.15s ease 0.1s;
-  transition: all 0.15s ease 0.1s;
+  -webkit-transition: all 0.15s ease 0s;
+  -o-transition: all 0.15s ease 0s;
+  transition: all 0.15s ease 0s;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
@@ -979,9 +982,9 @@ h4 {
   -webkit-border-radius: 0 0 7px 7px;
   -moz-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
-  -webkit-transition: all 0.15s ease 0.1s;
-  -o-transition: all 0.15s ease 0.1s;
-  transition: all 0.15s ease 0.1s;
+  -webkit-transition: all 0.15s ease 0s;
+  -o-transition: all 0.15s ease 0s;
+  transition: all 0.15s ease 0s;
   z-index: 1; }
   .profile-block_info .btn-girls-online {
     margin-top: 15px; }
@@ -1036,9 +1039,9 @@ h4 {
   height: 200px;
   width: 107%;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease 0.1s;
-  -o-transition: all 0.3s ease 0.1s;
-  transition: all 0.3s ease 0.1s; }
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
   .upcoming-img img {
     position: absolute;
     left: 0;
@@ -1204,7 +1207,7 @@ h4 {
   font-size: 18px;
   line-height: 28px;
   width: 60%;
-  margin: 0 auto 120px; }
+  margin: 0 auto 80px; }
 
 .contact-form_hold {
   margin-bottom: 115px; }
