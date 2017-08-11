@@ -557,7 +557,7 @@ h4 {
   background-image: -moz-linear-gradient(left, #ea4c58, #ea4c58);
   background-image: -ms-linear-gradient(left, #ea4c58, #ea4c58);
   background-image: -o-linear-gradient(left, #ea4c58, #ea4c58);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(#ea4c58), to(#ea4c58));
+  background-image: -webkit-gradient(linear, left top, right top, from(#ea4c58), to(#ea4c58));
   background-image: linear-gradient(left, #ea4c58, #ea4c58);
   background-color: transparent;
   background-position: 0 50%;
@@ -1731,7 +1731,15 @@ input[type='checkbox']:checked + label:after {
 
 /* footer / page bottom section END */
 /*==========  Desktop First  ==========*/
+@media only screen and (min-width: 1200px) {
+  .profile-block:last-child {
+    display: none; } }
+
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1250px) {
+  .profile-block:nth-child(3n) {
+    display: none; } }
+
 @media only screen and (max-width: 1200px) {
   .bordered-image, .intro, .our-team, .tours-home, .coaching {
     background-size: 350px auto; }
@@ -1739,13 +1747,18 @@ input[type='checkbox']:checked + label:after {
     font-size: 18px;
     padding-left: 20px;
     padding-right: 20px; }
-  .profile-block:last-child {
-    display: none; }
   .upcoming-box {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px; } }
+    margin-bottom: 60px; }
+  .ladies-profiles {
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1791,7 +1804,9 @@ input[type='checkbox']:checked + label:after {
     display: -o-flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex; }
+  .profile-block:nth-child(3n) {
+    display: block; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
