@@ -73,7 +73,7 @@ body
     
 .btn-top
     +border-radius($radius)
-    +transition($btn-transition)
+    +transition($btn-transition, 0s)
     width: 100px
     font-family: 'Roboto'
     font-weight: 400
@@ -131,12 +131,13 @@ h1
     margin-bottom: 50px
     
 h2
-    display: block
-    font-family: 'Roboto Slab'
-    font-size: 34px
-    font-weight: 700
-    margin-bottom: 20px
-    color: #000
+	display: block
+	font-family: 'Roboto Slab'
+	font-size: 34px
+	line-height: 1.4
+	font-weight: 700
+	margin-bottom: 20px
+	color: #000
 
 h3
     display: block
@@ -144,7 +145,7 @@ h3
     font-weight: 700
     font-size: 18px
     line-height: inherit
-    margin-bottom: 40px
+    margin-bottom: 20px
     font-style: italic
 
 h4
@@ -226,7 +227,7 @@ h4
     border: 1px solid transparent
     width: 47%
     +border-radius($radius)
-    +transition($btn-transition)
+    +transition($btn-transition, 0s)
     font-family: 'Roboto'
     font-weight: 400
     font-size: 12px
@@ -292,7 +293,7 @@ h4
     margin-bottom: 15px
     width: 100%
     padding: 0 15px
-    +transition(.15s)
+    +transition($transition, $transition)
     
 .home-form_error
     position: absolute
@@ -363,7 +364,7 @@ h4
     
 .main-nav
     overflow: hidden
-    +transition(.15s)
+    +transition($transition, 0s)
     li
         display: inline-block
         float: left
@@ -461,10 +462,10 @@ h4
     display: flex
     -ms-align-items: center
     align-items: center
-    +transition($transition)
+    +transition($transition, $transition)
     &:before,
     &:after
-        +transition(.3s)
+        +transition(.3s, 0s)
         content: ''
         position: absolute
         background: $main-color
@@ -502,7 +503,7 @@ h4
     background-image: url('../img/social-buttons.png')
     background-repeat: no-repeat
     background-position: 0 0
-    +transition(.15s)
+    +transition(.15s, 0s)
     &:hover
         -webkit-transform: scale(1.2)
         -ms-transform: scale(1.2)
@@ -579,7 +580,7 @@ h4
     font-family: 'Roboto' 
     font-weight: 400
     margin-bottom: 30px
-    color: #000
+    color: rgba(0,0,0,.90)
     
 .gray-paragraph
     @extend .border-content_paragraph
@@ -694,9 +695,17 @@ h4
 .ornament-heading
     padding-bottom: 45px
     background: url('../img/ornament--dot.png') no-repeat 0 100%
-    
+
 .paragraphs-section
-    margin: 80px 0
+	margin: 80px 0
+
+.coaching,
+.paragraphs-section
+	.border-content_paragraph
+		margin-bottom: 15px
+
+.paragraph-section_box
+	margin-bottom: 45px	
 
 .girls-online_counter
     display: inline-block
@@ -804,7 +813,7 @@ h4
     -ms-flex-basis: 210px
     -o-flex-basis: 210px
     flex-basis: 210px
-    +transition(.15s)
+    +transition($transition, $transition)
     +border-radius(7px)
     position: relative
     margin: 0 15px 50px 15px
@@ -840,7 +849,7 @@ h4
     padding: 15px 0 10px 0
     text-align: center
     +border-radius(0 0 7px 7px)
-    +transition(.15s)
+    +transition($transition, $transition)
     z-index: 1
     .btn-girls-online
         margin-top: 15px
@@ -893,7 +902,7 @@ h4
     height: 200px
     width: 107%
     overflow: hidden
-    +transition(.3s)
+    +transition($transition, $transition)
     img
         position: absolute
         left: 0
@@ -985,9 +994,7 @@ h4
     border: 1px solid #3f4cae
     border-radius: 7px
     background: none
-    -webkit-transition: all .15s
-    -o-transition: all .15s
-    transition: all .15s
+
 
 .btn-notify
     &:hover

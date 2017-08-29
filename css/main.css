@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:700|Roboto+Slab:400,700|Roboto:300,400,700");
 /*light - 300, regular - 400, bold - 700*/
+/*
+	@mixin transition($transition)
+		-webkit-transition: all $transition ease .2s
+		-o-transition: all $transition ease .2s
+		transition: all $transition ease .2s
+
+	@mixin transition($btn-transition)
+		-webkit-transition: all $btn-transition ease 0s
+		-o-transition: all $btn-transition ease 0s
+		transition: all $btn-transition ease 0s
+
+	.transition
+		-webkit-transition: $transition ease $transition
+		-o-transition: $transition ease $transition
+		transition: $transition ease $transition
+
+	.btn-transition
+		-webkit-transition: all $btn-transition ease 0s
+		-o-transition: all $btn-transition ease 0s
+		transition: all $btn-transition ease 0s
+
+	@mixin transition-value($transition-prop, $transition-ease)
+		-webkit-transition: $transition-prop ease $transition-ease
+		-o-transition: $transition-prop ease $transition-ease
+		transition: $transition-prop ease $transition-ease
+
+ */
 .red-btn, .btn-home-form_submit, .btn-more, .btn-chat {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -211,6 +238,7 @@ h2 {
   display: block;
   font-family: 'Roboto Slab';
   font-size: 34px;
+  line-height: 1.4;
   font-weight: 700;
   margin-bottom: 20px;
   color: #000; }
@@ -221,7 +249,7 @@ h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: inherit;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-style: italic; }
 
 h4 {
@@ -389,9 +417,9 @@ h4 {
   margin-bottom: 15px;
   width: 100%;
   padding: 0 15px;
-  -webkit-transition: all 0.15s ease 0s;
-  -o-transition: all 0.15s ease 0s;
-  transition: all 0.15s ease 0s; }
+  -webkit-transition: all 0.15s ease 0.15s;
+  -o-transition: all 0.15s ease 0.15s;
+  transition: all 0.15s ease 0.15s; }
 
 .home-form_error {
   position: absolute;
@@ -557,7 +585,7 @@ h4 {
   background-image: -moz-linear-gradient(left, #ea4c58, #ea4c58);
   background-image: -ms-linear-gradient(left, #ea4c58, #ea4c58);
   background-image: -o-linear-gradient(left, #ea4c58, #ea4c58);
-  background-image: -webkit-gradient(linear, left top, right top, from(#ea4c58), to(#ea4c58));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(left), color-stop(#ea4c58), to(#ea4c58));
   background-image: linear-gradient(left, #ea4c58, #ea4c58);
   background-color: transparent;
   background-position: 0 50%;
@@ -580,9 +608,9 @@ h4 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-transition: all 0.15s ease 0s;
-  -o-transition: all 0.15s ease 0s;
-  transition: all 0.15s ease 0s; }
+  -webkit-transition: all 0.15s ease 0.15s;
+  -o-transition: all 0.15s ease 0.15s;
+  transition: all 0.15s ease 0.15s; }
   .btn-main-nav:before, .btn-main-nav:after {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -690,7 +718,7 @@ h4 {
   font-family: 'Roboto';
   font-weight: 400;
   margin-bottom: 30px;
-  color: #000; }
+  color: rgba(0, 0, 0, 0.9); }
 
 .gray-paragraph {
   color: #939292; }
@@ -823,6 +851,14 @@ h4 {
 .paragraphs-section {
   margin: 80px 0; }
 
+.coaching .border-content_paragraph, .coaching .gray-paragraph,
+.paragraphs-section .border-content_paragraph,
+.paragraphs-section .gray-paragraph {
+  margin-bottom: 15px; }
+
+.paragraph-section_box {
+  margin-bottom: 45px; }
+
 .girls-online_counter {
   display: inline-block;
   font-family: 'Roboto';
@@ -942,9 +978,9 @@ h4 {
   -o-flex-basis: 210px;
   -ms-flex-preferred-size: 210px;
   flex-basis: 210px;
-  -webkit-transition: all 0.15s ease 0s;
-  -o-transition: all 0.15s ease 0s;
-  transition: all 0.15s ease 0s;
+  -webkit-transition: all 0.15s ease 0.15s;
+  -o-transition: all 0.15s ease 0.15s;
+  transition: all 0.15s ease 0.15s;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
@@ -982,9 +1018,9 @@ h4 {
   -webkit-border-radius: 0 0 7px 7px;
   -moz-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
-  -webkit-transition: all 0.15s ease 0s;
-  -o-transition: all 0.15s ease 0s;
-  transition: all 0.15s ease 0s;
+  -webkit-transition: all 0.15s ease 0.15s;
+  -o-transition: all 0.15s ease 0.15s;
+  transition: all 0.15s ease 0.15s;
   z-index: 1; }
   .profile-block_info .btn-girls-online {
     margin-top: 15px; }
@@ -1039,9 +1075,9 @@ h4 {
   height: 200px;
   width: 107%;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s; }
+  -webkit-transition: all 0.15s ease 0.15s;
+  -o-transition: all 0.15s ease 0.15s;
+  transition: all 0.15s ease 0.15s; }
   .upcoming-img img {
     position: absolute;
     left: 0;
@@ -1144,10 +1180,7 @@ h4 {
   line-height: 36px;
   border: 1px solid #3f4cae;
   border-radius: 7px;
-  background: none;
-  -webkit-transition: all .15s;
-  -o-transition: all .15s;
-  transition: all .15s; }
+  background: none; }
 
 .btn-notify:hover {
   color: #fff;
